@@ -13,12 +13,11 @@ int main(){
     // A variavel decimal valor, indica o saldo da conta do cardapio do cliente.
     // valorPago, indica o valor pago pelo cliente.
     // troco, indica o resto que deve ser devolvido ao cliente logo após o pagamento.
-    float valor, valorPago, troco;
+    float valor = 0, valorPago =0 , troco = 0;
 
-    printf("Seja bem-vindo ao Restaurante Sabor da Terra!");
-    printf("\n");
+    printf("Seja bem-vindo ao Restaurante Sabor da Terra!\n");
     
-    // O laço while, quando atribuido o valor 1, que significa true. Funciona como um laço infinito e só é finalizado com o comando exit(0);
+    // O laço while, quando atribuido o valor 1, que significa true = verdadeiro. Funciona como um laço infinito e só é finalizado com o comando exit(0);
     while(1){
         
         // A variavel opc, informa a opção que o usuario deseja selecionar na fução switch case.
@@ -33,7 +32,7 @@ int main(){
             case 1:
                 printf("\t______Cardapio______\n");
                 printf("\n\n1 - Pirão com Costela_________R$30,00;\n2 - Pirão com Rabada__________R$30,00.");
-                printf("\n3 - Macarrão ao alho e óleo___R$25,50;\n4 - Macarrão Tradicional______R$10,75.");
+                printf("\n3 - Macarrão ao alho e óleo___R$35,50;\n4 - Macarrão Tradicional______R$10,75.");
                 break;
 
             // case 2, insere os pratos que o cliente deseja na lista de pedido.
@@ -57,7 +56,7 @@ int main(){
                     }
                 }
 
-                printf("\nO valor total do pedido é: R$%.2f", valor);
+                printf("\nO valor total do pedido é: R$%.2f", valor);       
                 break;
             
             case 3:
